@@ -3,15 +3,76 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
-			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-			</Link>
-			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
-				</Link>
-			</div>
-		</nav>
+		<>
+			<nav className="navbar navbar-expand-lg navbar-light bg-light content d-flex justify-content-around">
+				<div className="col">
+					<Link to="/">
+						<a className="navbar-brand" href="#">
+							{"Florida's Farms to your Table"}
+						</a>
+					</Link>
+				</div>
+
+				<div className="row mx-3">
+					<button
+						className="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown"
+						aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span className="navbar-toggler-icon" />
+					</button>
+					<div className="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul className="navbar-nav">
+							<li className="nav-item active">
+								<Link to="/">
+									<a className="nav-link" href="#">
+										Home <span className="sr-only">(current)</span>
+									</a>
+								</Link>
+							</li>
+							<li className="nav-item">
+								<Link to="/farms">
+									<a className="nav-link" href="#">
+										Farms
+									</a>
+								</Link>
+							</li>
+							<li className="nav-item dropdown">
+								<a
+									className="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdownMenuLink"
+									role="button"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false">
+									About us
+								</a>
+								<div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<Link to="/about">
+										<a className="dropdown-item" href="#">
+											{"About Us!"}
+										</a>
+									</Link>
+									<Link to="/about/faq">
+										<a className="dropdown-item" href="#">
+											{"FAQ"}
+										</a>
+									</Link>
+									<Link to="/about/contact">
+										<a className="dropdown-item" href="#">
+											{"Contact Us!"}
+										</a>
+									</Link>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</>
 	);
 };
