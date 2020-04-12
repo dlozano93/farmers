@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../styles/navbar.scss";
 
 export const Navbar = () => {
 	return (
@@ -13,7 +14,7 @@ export const Navbar = () => {
 					</Link>
 				</div>
 
-				<div className="row mx-3">
+				<div className="row mx-3 d-flex justify-content-around">
 					<button
 						className="navbar-toggler"
 						type="button"
@@ -26,37 +27,25 @@ export const Navbar = () => {
 					</button>
 					<div className="collapse navbar-collapse" id="navbarNavDropdown">
 						<ul className="navbar-nav">
-							<li className="nav-item active">
+							<li className="nav-item mx-2 active">
 								<Link to="/">
 									<a className="nav-link" href="#">
 										Home <span className="sr-only">(current)</span>
 									</a>
 								</Link>
 							</li>
-							<li className="nav-item">
+							<li className="nav-item mx-2">
 								<Link to="/farms">
 									<a className="nav-link" href="#">
 										Farms
 									</a>
 								</Link>
 							</li>
-							<li className="nav-item dropdown">
-								<a
-									className="nav-link dropdown-toggle"
-									href="#"
-									id="navbarDropdownMenuLink"
-									role="button"
-									data-toggle="dropdown"
-									aria-haspopup="true"
-									aria-expanded="false">
-									About us
-								</a>
+							<li className="nav-item mx-2 dropdown">
+								<Link to="/about">
+									<a className="nav-link dropdown-toggle">About us</a>
+								</Link>
 								<div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<Link to="/about">
-										<a className="dropdown-item" href="#">
-											{"About Us!"}
-										</a>
-									</Link>
 									<Link to="/about/faq">
 										<a className="dropdown-item" href="#">
 											{"FAQ"}
