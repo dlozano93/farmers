@@ -13,3 +13,26 @@ import Layout from "./layout";
 
 //render your react application
 ReactDOM.render(<Layout />, document.querySelector("#app"));
+
+<ul>
+	<li>
+		<a className="active" href="#home">
+			Local Farms
+		</a>
+	</li>
+	<li>
+		<a className="active" href="#news">
+			Farmers Market
+		</a>
+	</li>
+	<li>
+		<a className="active" href="#contact">
+			Organic Farms
+		</a>
+	</li>
+	<li>
+		<a className="active" href="#about">
+			Contact
+		</a>
+	</li>
+</ul>;
