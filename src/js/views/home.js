@@ -2,6 +2,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
 import React from "react";
 import { UncontrolledCarousel } from "reactstrap";
+import { Card } from "../component/card";
 
 const items = [
 	{
@@ -29,11 +30,37 @@ const items = [
 ];
 
 export const Home = () => {
+	let list = [
+		{
+			card: "Farmer",
+			name: "The Farmer's Guild",
+			image: "https://66.media.tumblr.com/cfe5606054b88f6b226893b497d1d9f5/tumblr_miyc1mU9111qao0rfo1_400.jpg",
+			text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.",
+			buttonLink: "https://www.farmers.gov/",
+			id: 1
+		}
+	];
+
 	return (
 		<div>
 			<UncontrolledCarousel items={items} />
-			<div>hey</div>
+			<div>This will be the section we add Brunos mission statement for the Company</div>
+			<div className="card-group d-flex justify-content-around">
+				{list.map((item, index) => {
+					return (
+						<Card
+							key={index}
+							ximage={item.image}
+							xtext={item.text}
+							xbuttonLink={item.buttonLink}
+							xid={item.id}
+							xname={item.name}
+						/>
+					);
+				})}
+			</div>
 		</div>
 	);
 };
+
 export default Home;
