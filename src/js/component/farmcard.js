@@ -26,9 +26,6 @@ export const FarmCard = props => {
 			<img className="img-thumbnail" src={props.logo} alt="Card image cap" />
 			<br />
 			<h2>{props.name}</h2>
-
-			<span>{props.address}</span>
-			<br />
 			<span>{props.location}</span>
 			<br />
 			<Link className="btn btn-success btn-md round" to={"/farms/" + props.index}>
