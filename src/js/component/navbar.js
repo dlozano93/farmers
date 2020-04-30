@@ -27,10 +27,10 @@ export const Navbar = () => {
 					</button>
 					<div className="collapse navbar-collapse" id="navbarNavDropdown">
 						<ul className="navbar-nav">
-							<li className="nav-item mx-2 active">
+							<li className="nav-item mx-2">
 								<Link to="/">
 									<a className="nav-link" href="#">
-										Home <span className="sr-only">(current)</span>
+										Home <span className="sr-only"> (current)</span>
 									</a>
 								</Link>
 							</li>

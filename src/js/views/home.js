@@ -1,8 +1,9 @@
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { UncontrolledCarousel } from "reactstrap";
-import { Card } from "../component/card";
+import { FarmCard } from "../component/farmcard";
+import { Context } from "../store/appContext";
 
 const items = [
 	{
@@ -40,21 +41,25 @@ export const Home = () => {
 			id: 1
 		}
 	];
-
+	const [state, setState] = useState({
+		showModal: false,
+		index: null
+	});
+	const { store, actions } = useContext(Context);
 	return (
 		<div>
 			<UncontrolledCarousel items={items} />
 			<div>This will be the section we add Brunos mission statement for the Company</div>
 			<div className="card-group d-flex justify-content-around">
-				{list.map((item, index) => {
+				{store.randomListWithThreeItems.map((item, index) => {
 					return (
-						<Card
+						<FarmCard
 							key={index}
-							ximage={item.image}
-							xtext={item.text}
-							xbuttonLink={item.buttonLink}
-							xid={item.id}
-							xname={item.name}
+							index={index}
+							name={item.name}
+							address={item.address}
+							location={item.location}
+							logo={item.logo.sizes.medium}
 						/>
 					);
 				})}

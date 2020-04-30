@@ -23,15 +23,17 @@ export const FarmCard = props => {
 								my-2
 								mx-3
 								 text-center">
-			<img className="img-thumbnail" src={rigoImage} alt="Card image cap" />
+			<img className="img-thumbnail" src={props.logo} alt="Card image cap" />
 			<br />
-			<h2>{"Name"}</h2>
+			<h2>{props.name}</h2>
 
-			<span>{"Address: "}</span>
+			<span>{props.address}</span>
 			<br />
-			<span>{"Price: "}</span>
+			<span>{props.location}</span>
 			<br />
-			<div className="btn btn-success btn-md round">{"More info"}</div>
+			<Link className="btn btn-success btn-md round" to={"/farms/" + props.index}>
+				{"More info"}
+			</Link>
 		</div>
 	);
 };
@@ -41,13 +43,15 @@ export const FarmCard = props => {
  * your component's properties
  **/
 FarmCard.propTypes = {
-	// history: PropTypes.object,
-	// onOpen: PropTypes.func,
-	// price: PropTypes.price,
-	// address: PropTypes.address,
-	// index: PropTypes.number,
-	// name: PropTypes.name,
-	// image: PropTypes.image
+	history: PropTypes.object,
+	onOpen: PropTypes.func,
+	location: PropTypes.location,
+	products: PropTypes.products,
+	price: PropTypes.price,
+	address: PropTypes.address,
+	index: PropTypes.number,
+	name: PropTypes.name,
+	logo: PropTypes.image
 };
 
 /**
