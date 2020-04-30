@@ -31,12 +31,12 @@ export const Farmview = props => {
 					<img src={farm.logo && farm.logo.sizes.medium} />
 				</p>
 				<h1>{farm.name}</h1>
-				<h1>{farm.location}</h1>
-				<h1>{farm.address}</h1>
-				<h1>{farm.products}</h1>
-				<h1>{farm.web}</h1>
-				<h1>{farm.phone}</h1>
-				<h1>{farm.description}</h1>
+				<p>{farm.description}</p>
+				<h2>{farm.location}</h2>
+				<h3>{farm.address}</h3>
+				<h3>{farm.products}</h3>
+				<h3>{farm.web}</h3>
+				<h3>{farm.phone}</h3>
 			</div>
 		</>
 	);
