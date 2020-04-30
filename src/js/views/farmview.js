@@ -35,7 +35,9 @@ export const Farmview = props => {
 				<h2>{farm.location}</h2>
 				<h3>{farm.address}</h3>
 				<h3>{farm.products}</h3>
-				<h3>{farm.web}</h3>
+				<h3>
+					<a href={farm.web}>{farm.web}</a>
+				</h3>
 				<h3>{farm.phone}</h3>
 			</div>
 		</>
