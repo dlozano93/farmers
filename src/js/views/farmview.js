@@ -13,25 +13,22 @@ export const Farmview = props => {
 	return (
 		<>
 			<div className="jumbotron jumbotron-fluid">
-				<img
-					src="https://ei.marketwatch.com/Multimedia/2019/02/26/Photos/ZQ/MW-HE601_farm_0_20190226111522_ZQ.jpg?uuid=b78f892e-39e1-11e9-8429-ac162d7bc1f7"
-					className="img-fluid"
-					alt="Responsive image"
-				/>
 				<div className="container">
-					<h1 className="display-4">Fluid jumbotron</h1>
-					<p className="lead">
-						This is a modified jumbotron that occupies the entire horizontal space of its parent.
-					</p>
+					<div className="row">
+						<div className="col py-auto">
+							<h1 className="display-4">{farm.name}</h1>
+							<p className="lead">{farm.description}</p>
+						</div>
+						<div className="col-sm-auto d-flex justify-content-center">
+							<img src={farm.logo && farm.logo.sizes.medium} />
+						</div>
+					</div>
 				</div>
 			</div>
 			<div className="text-center mt-5">
-				<h1>Farm Profile will be Here</h1>
 				<p>
 					<img src={farm.logo && farm.logo.sizes.medium} />
 				</p>
-				<h1>{farm.name}</h1>
-				<p>{farm.description}</p>
 				<h2>{farm.location}</h2>
 				<h3>{farm.address}</h3>
 				<h3>{farm.products}</h3>
