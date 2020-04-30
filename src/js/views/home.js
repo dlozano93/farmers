@@ -50,6 +50,7 @@ export const Home = () => {
 		<div>
 			<UncontrolledCarousel items={items} />
 			<div>This will be the section we add Brunos mission statement for the Company</div>
+			<h2>Featured Farms:</h2>
 			<div className="card-group d-flex justify-content-around">
 				{store.randomListWithThreeItems.map((item, index) => {
 					return (
@@ -57,7 +58,6 @@ export const Home = () => {
 							key={index}
 							index={index}
 							name={item.name}
-							address={item.address}
 							location={item.location}
 							logo={item.logo.sizes.medium}
 						/>
