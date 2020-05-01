@@ -7,7 +7,7 @@ import { Context } from "../store/appContext";
 
 const items = [
 	{
-		header: "Newly Designed Farming",
+		header: "Fruitful Farming",
 		src: "https://cdn.britannica.com/22/75922-050-D3982BD0/flowers-fruits-garden-strawberry-plant-species.jpg",
 		// altText: "Slide 1",
 		// caption: "Slide 1",
