@@ -7,7 +7,7 @@ import { Context } from "../store/appContext";
 
 const items = [
 	{
-		src: "https://66.media.tumblr.com/86efa06ecc187f1f0116b84e6c90f5d1/tumblr_oa44lpQf7E1qg2ny5o1_500.jpg",
+		src: "https://cdn.britannica.com/22/75922-050-D3982BD0/flowers-fruits-garden-strawberry-plant-species.jpg",
 		altText: "Slide 1",
 		caption: "Slide 1",
 		header: "Slide 1 Header",
@@ -49,7 +49,10 @@ export const Home = () => {
 	return (
 		<div>
 			<UncontrolledCarousel items={items} />
-			<div>This will be the section we add Brunos mission statement for the Company</div>
+			<div>
+				Mission Statement: To become a platform where every grower in the state of Florida is welcomed to sell
+				their produce and connect to consumers making an effortless experience.
+			</div>
 			<h2>Featured Farms:</h2>
 			<div className="card-group d-flex justify-content-around">
 				{store.randomListWithThreeItems.map((item, index) => {
