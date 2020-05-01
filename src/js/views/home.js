@@ -7,25 +7,25 @@ import { Context } from "../store/appContext";
 
 const items = [
 	{
+		header: "Newly Designed Farming",
 		src: "https://cdn.britannica.com/22/75922-050-D3982BD0/flowers-fruits-garden-strawberry-plant-species.jpg",
-		altText: "Slide 1",
-		caption: "Slide 1",
-		header: "Slide 1 Header",
+		// altText: "Slide 1",
+		// caption: "Slide 1",
 		key: "1"
 	},
 	{
-		src: "https://data.whicdn.com/images/136308450/original.jpg",
-		altText: "Slide 2",
-		caption: "Slide 2",
-		header: "Slide 2 Header",
+		src: "https://cdn.britannica.com/17/196817-050-6A15DAC3/vegetables.jpg",
+		// altText: "Slide 2",
+		// caption: "Slide 2",
+		header: "Farm Veggies",
 		key: "2"
 	},
 	{
 		src:
-			"https://66.media.tumblr.com/d2326936f4b82d3b99ce2e1da8dc5ba9/6fb2ff3a0c1dfc45-ed/s400x600/e452ede2ee56d315161f82e06a22755c537f6a95.jpg",
-		altText: "Slide 3",
-		caption: "Slide 3",
-		header: "Slide 3 Header",
+			"https://images.squarespace-cdn.com/content/v1/5669150a9cadb6552c21494a/1462597946985-ZD0313N5II0OUZUW4GU9/ke17ZwdGBToddI8pDm48kLu-Er-4dNdZra0M11xOJLYUqsxRUqqbr1mOJYKfIPR7Wj4jzmqc6p6rk1DK47rYoqH9veER39_txRNOfzu-Agz2qGF4aeh8SMGSJO_jIt07InPi9iDjx9w8K4ZfjXt2dhqhd8tyOCqSYLQCVr0-rrHm2ReZZwwWqAZ2tt3nY15PCjLISwBs8eEdxAxTptZAUg/LFM_Home_Banner_Image.png?format=1500w",
+		// altText: "Slide 3",
+		// caption: "Slide 3",
+		header: "Explore The Market",
 		key: "3"
 	}
 ];
