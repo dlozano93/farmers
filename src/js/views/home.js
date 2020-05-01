@@ -21,8 +21,8 @@ const items = [
 		key: "2"
 	},
 	{
-		src:
-			"https://images.squarespace-cdn.com/content/v1/5669150a9cadb6552c21494a/1462597946985-ZD0313N5II0OUZUW4GU9/ke17ZwdGBToddI8pDm48kLu-Er-4dNdZra0M11xOJLYUqsxRUqqbr1mOJYKfIPR7Wj4jzmqc6p6rk1DK47rYoqH9veER39_txRNOfzu-Agz2qGF4aeh8SMGSJO_jIt07InPi9iDjx9w8K4ZfjXt2dhqhd8tyOCqSYLQCVr0-rrHm2ReZZwwWqAZ2tt3nY15PCjLISwBs8eEdxAxTptZAUg/LFM_Home_Banner_Image.png?format=1500w",
+		src: "https://www.golegal.co.za/wp-content/uploads/2017/10/Fresh-Produce.jpg",
+		// "https://images.squarespace-cdn.com/content/v1/5669150a9cadb6552c21494a/1462597946985-ZD0313N5II0OUZUW4GU9/ke17ZwdGBToddI8pDm48kLu-Er-4dNdZra0M11xOJLYUqsxRUqqbr1mOJYKfIPR7Wj4jzmqc6p6rk1DK47rYoqH9veER39_txRNOfzu-Agz2qGF4aeh8SMGSJO_jIt07InPi9iDjx9w8K4ZfjXt2dhqhd8tyOCqSYLQCVr0-rrHm2ReZZwwWqAZ2tt3nY15PCjLISwBs8eEdxAxTptZAUg/LFM_Home_Banner_Image.png?format=1500w",
 		// altText: "Slide 3",
 		// caption: "Slide 3",
 		header: "Explore The Market",
