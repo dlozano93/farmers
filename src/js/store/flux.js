@@ -11,18 +11,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.then(resp => resp.json())
 					.then(data => {
 						data.sort((a, b) => (a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1));
-						const random = () => Math.floor(Math.random() * data.length);
-						let ranList = [],
-							itemList = [];
-						let ran = random();
-						while (ranList.length < 3)
-							if (!ranList.includes(ran)) {
-								ranList.push(ran);
-								itemList.push(data[ran]);
-							} else ran = random();
+
 						setStore({
 							allFarms: data,
-							randomListWithThreeItems: itemList
+							randomListWithThreeItems: data.slice(0, 3)
 						});
 					});
 			}

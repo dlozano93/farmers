@@ -2,18 +2,6 @@
     display: block; // remove the gap so it doesn't close
  }
 
-
- ul {
-  list-style-type: none;
-  margin: 90;
-  padding: 10;
-  width: 35%;
-  background-color: #ffffff;
-  height: 100%; 
-  position: left; 
-  overflow: fixed; 
-}
-
 li a {
   display: block;
   color: #000;
@@ -21,12 +9,5 @@ li a {
   text-decoration: none;
 }
 
-li a.active {
-  background-color: rgb(22, 116, 170);
-  color: white;
-}
 
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
+

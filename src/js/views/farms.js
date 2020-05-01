@@ -3,6 +3,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
 import { FarmCard } from "../component/farmcard";
 import { Context } from "../store/appContext";
+import "../../styles/farms.scss";
 
 export const Farms = () => {
 	const [state, setState] = useState({
@@ -13,12 +14,10 @@ export const Farms = () => {
 
 	return (
 		<>
-			<div className="jumbotron jumbotron-fluid">
+			<div className="jumbotron jumbotron-fluid text-white orangefarm">
 				<div className="container">
-					<h1 className="display-4">Fluid jumbotron</h1>
-					<p className="lead">
-						This is a modified jumbotron that occupies the entire horizontal space of its parent.
-					</p>
+					<h1 className="header-text display-4">{"Local Florida Farms"}</h1>
+					<p className="header-text lead">{"Below you'll find a selection of local farms in Florida"}</p>
 				</div>
 			</div>
 			<div className="container d-flex justify-content-center">

@@ -5,11 +5,11 @@ import "../../styles/navbar.scss";
 export const Navbar = () => {
 	return (
 		<>
-			<nav className="navbar navbar-expand-lg navbar-light bg-light content d-flex justify-content-around">
+			<nav className="navbar navbar-expand-lg navbar-dark bg-dark content d-flex justify-content-around">
 				<div className="col">
 					<Link to="/">
 						<a className="navbar-brand" href="#">
-							{"Florida's Farms to your Table"}
+							<img src="https://i.ibb.co/zQFT8zP/alo15.png" />
 						</a>
 					</Link>
 				</div>
@@ -30,7 +30,7 @@ export const Navbar = () => {
 							<li className="nav-item mx-2">
 								<Link to="/">
 									<a className="nav-link" href="#">
-										Home <span className="sr-only"> (current)</span>
+										Home
 									</a>
 								</Link>
 							</li>
@@ -45,15 +45,22 @@ export const Navbar = () => {
 								<Link to="/about">
 									<a className="nav-link dropdown-toggle">About us</a>
 								</Link>
-								<div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<div
+									className="dropdown-menu bg-dark text-light"
+									aria-labelledby="navbarDropdownMenuLink">
 									<Link to="/about/faq">
-										<a className="dropdown-item" href="#">
+										<a className="dropdown-item text-muted" href="#">
 											{"FAQ"}
 										</a>
 									</Link>
 									<Link to="/about/contact">
-										<a className="dropdown-item" href="#">
+										<a className="dropdown-item text-muted" href="#">
 											{"Contact Us!"}
+										</a>
+									</Link>
+									<Link to="/about/signup">
+										<a className="dropdown-item text-muted" href="#">
+											{"Sign up here!"}
 										</a>
 									</Link>
 								</div>
